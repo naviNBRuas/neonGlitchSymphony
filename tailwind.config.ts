@@ -1,3 +1,4 @@
+
 import type { Config } from "tailwindcss";
 
 export default {
@@ -61,6 +62,13 @@ export default {
 					'accent-foreground': 'hsl(var(--sidebar-accent-foreground))',
 					border: 'hsl(var(--sidebar-border))',
 					ring: 'hsl(var(--sidebar-ring))'
+				},
+				psychedelic: {
+					purple: '#9b02fc',
+					pink: '#fe02fe',
+					blue: '#02fefe',
+					green: '#01ff89',
+					yellow: '#ffef00',
 				}
 			},
 			borderRadius: {
@@ -84,11 +92,50 @@ export default {
 					to: {
 						height: '0'
 					}
+				},
+				'float': {
+					'0%, 100%': { transform: 'translateY(0)' },
+					'50%': { transform: 'translateY(-20px)' }
+				},
+				'text-glitch': {
+					'0%, 100%': { transform: 'skew(0deg, 0deg)' },
+					'25%': { transform: 'skew(10deg, 2deg)' },
+					'50%': { transform: 'skew(-15deg, -1deg)' },
+					'75%': { transform: 'skew(5deg, -5deg)' }
+				},
+				'hue-rotate': {
+					'0%': { filter: 'hue-rotate(0deg)' },
+					'100%': { filter: 'hue-rotate(360deg)' }
+				},
+				'distort': {
+					'0%': { transform: 'scale(1) skew(0deg)' },
+					'25%': { transform: 'scale(1.05) skew(2deg)' },
+					'50%': { transform: 'scale(0.95) skew(-2deg)' },
+					'75%': { transform: 'scale(1.05) skew(1deg)' },
+					'100%': { transform: 'scale(1) skew(0deg)' }
+				},
+				'scanline': {
+					'0%': { transform: 'translateY(0)', opacity: '0.5' },
+					'100%': { transform: 'translateY(100vh)', opacity: '0.5' }
+				},
+				'pulse-neon': {
+					'0%, 100%': { 
+						textShadow: '0 0 5px #fff, 0 0 10px #fff, 0 0 15px #fe02fe, 0 0 20px #fe02fe, 0 0 25px #fe02fe, 0 0 30px #fe02fe' 
+					},
+					'50%': { 
+						textShadow: '0 0 2px #fff, 0 0 5px #fff, 0 0 10px #fe02fe, 0 0 15px #fe02fe, 0 0 20px #fe02fe, 0 0 25px #fe02fe' 
+					}
 				}
 			},
 			animation: {
 				'accordion-down': 'accordion-down 0.2s ease-out',
-				'accordion-up': 'accordion-up 0.2s ease-out'
+				'accordion-up': 'accordion-up 0.2s ease-out',
+				'float': 'float 6s ease-in-out infinite',
+				'text-glitch': 'text-glitch 2s ease-in-out infinite',
+				'hue-rotate': 'hue-rotate 10s linear infinite',
+				'distort': 'distort 5s ease-in-out infinite',
+				'scanline': 'scanline 2s linear infinite',
+				'pulse-neon': 'pulse-neon 2s ease-in-out infinite'
 			}
 		}
 	},
