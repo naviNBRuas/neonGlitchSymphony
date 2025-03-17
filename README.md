@@ -1,69 +1,74 @@
-# Welcome to your Lovable project
+# Neon Glitch Symphony
 
-## Project info
+## Overview
+**Neon Glitch Symphony** is a conceptual web design project that explores the fusion of neon aesthetics, glitch effects, and psychedelic visuals. Built with modern web technologies, this project delivers an immersive, interactive experience.
 
-**URL**: https://lovable.dev/projects/47fbbb9f-074b-4932-964f-94bc219f7bb9
+## Tech Stack
+- **Vite** – Lightning-fast build tool for frontend development.
+- **React** – Component-based UI framework.
+- **ShadCN** – A modern UI component library.
+- **TypeScript** – Statically typed JavaScript.
+- **Tailwind CSS** – Utility-first CSS framework for rapid styling.
+- **PostCSS** – Tool for transforming CSS with JavaScript plugins.
+- **ESLint** – Code linting for maintaining quality and consistency.
 
-## How can I edit this code?
+## Features
+- **Psychedelic UI/UX** – Glowing neon visuals combined with glitch effects.
+- **Fast & Optimized** – Built using Vite for instant hot reload and optimized performance.
+- **Custom Components** – Tailor-made interactive UI elements powered by ShadCN.
+- **Dark Cyberpunk Aesthetic** – Inspired by futuristic, cyberpunk, and vaporwave design.
 
-There are several ways of editing your application.
-
-**Use Lovable**
-
-Simply visit the [Lovable Project](https://lovable.dev/projects/47fbbb9f-074b-4932-964f-94bc219f7bb9) and start prompting.
-
-Changes made via Lovable will be committed automatically to this repo.
-
-**Use your preferred IDE**
-
-If you want to work locally using your own IDE, you can clone this repo and push changes. Pushed changes will also be reflected in Lovable.
-
-The only requirement is having Node.js & npm installed - [install with nvm](https://github.com/nvm-sh/nvm#installing-and-updating)
-
-Follow these steps:
+## Installation
+Ensure you have **Node.js** and **Bun** installed.
 
 ```sh
-# Step 1: Clone the repository using the project's Git URL.
-git clone <YOUR_GIT_URL>
+# Clone the repository
+git clone https://github.com/naviNBRuas/neon-glitch-symphony.git
+cd neon-glitch-symphony
 
-# Step 2: Navigate to the project directory.
-cd <YOUR_PROJECT_NAME>
+# Install dependencies
+bun install
 
-# Step 3: Install the necessary dependencies.
-npm i
-
-# Step 4: Start the development server with auto-reloading and an instant preview.
-npm run dev
+# Start development server
+bun run dev
 ```
 
-**Edit a file directly in GitHub**
+## Project Structure
+```
+neon-glitch-symphony/
+│-- public/               # Static assets
+│-- src/                  # Source code
+│   ├── components/       # UI Components
+│   ├── styles/           # Global styles
+│   ├── pages/            # Application pages
+│   ├── utils/            # Utility functions
+│-- index.html            # Main entry file
+│-- package.json          # Project metadata
+│-- vite.config.ts        # Vite configuration
+│-- tailwind.config.ts    # Tailwind CSS configuration
+│-- tsconfig.json         # TypeScript configuration
+```
 
-- Navigate to the desired file(s).
-- Click the "Edit" button (pencil icon) at the top right of the file view.
-- Make your changes and commit the changes.
+## Development
+### Running the Dev Server
+```sh
+bun run dev
+```
+This will launch the local development server with hot reloading enabled.
 
-**Use GitHub Codespaces**
+### Building for Production
+```sh
+bun run build
+```
+Generates an optimized production-ready build.
 
-- Navigate to the main page of your repository.
-- Click on the "Code" button (green button) near the top right.
-- Select the "Codespaces" tab.
-- Click on "New codespace" to launch a new Codespace environment.
-- Edit files directly within the Codespace and commit and push your changes once you're done.
+## Contribution
+This project is a concept design and currently private. If you are interested in contributing, feel free to fork the repository and submit a pull request.
 
-## What technologies are used for this project?
+## License
+🚧 **Private Project** – Not licensed for public use.
 
-This project is built with .
+---
 
-- Vite
-- TypeScript
-- React
-- shadcn-ui
-- Tailwind CSS
+💡 **neon-glitch-symphony** is an artistic and experimental take on web design, pushing the boundaries of digital aesthetics with modern frontend tools.
 
-## How can I deploy this project?
-
-Simply open [Lovable](https://lovable.dev/projects/47fbbb9f-074b-4932-964f-94bc219f7bb9) and click on Share -> Publish.
-
-## I want to use a custom domain - is that possible?
-
-We don't support custom domains (yet). If you want to deploy your project under your own domain then we recommend using Netlify. Visit our docs for more details: [Custom domains](https://docs.lovable.dev/tips-tricks/custom-domain/)
